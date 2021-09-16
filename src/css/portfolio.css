@@ -1,0 +1,43 @@
+.section-title {
+    color: orange;
+}
+
+.project-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: solid 1px white;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.project-title, .project-desc {
+    margin: 0;
+}
+.project-title {
+    font-size: 25px;
+}
+.project-desc {
+    font-size: 18px;
+}
+.project-image {
+    width: 200px;
+    height: 200px;
+}
+
+.contacts {
+    padding-left: 20px;
+}
+.contact-link {
+    color: gainsboro;
+    cursor: pointer;
+}
+.contact-link:hover {
+    color: orange;
+}
