@@ -3,5 +3,5 @@
  A remake of a portfolio website. Inspired (clearly) by https://github.com/paulkoeckdev/TerminalPortfolio
 
 ## Preview:
-![image](https://user-images.githubusercontent.com/42365887/133561788-173e41f3-ea21-4cd4-8634-b965e894f036.png)
+![image](https://user-images.githubusercontent.com/42365887/133562031-b1f681d6-fb82-4853-8c6a-68a233ba2ce0.png)
 
