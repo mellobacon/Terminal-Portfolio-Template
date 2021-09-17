@@ -173,5 +173,24 @@ body {
     }
 }
 @media only screen and (max-width: 480px) {
-    
+    #title {
+        font-size: 30px !important;
+    }
+    #subtitle {
+        font-size: 15px !important;
+    }
+    .prompt {
+        font-size: 15px !important;
+    }
+    .output {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 330px) {
+    #title {
+        font-size: 25px !important;
+    }
+    .project {
+        width: 190px !important;
+    }
 }
