@@ -87,13 +87,15 @@ const defaultcommands = [
 ]
 const processCommand = () => {
     let args = command.split(" ");
+    let cmd = args[0];
 
     // Find the proper command from the input
     let input = defaultcommands.find(cmd => cmd.command === args[0]) || config.commands.find(cmd => cmd.command === args[0]);
+    args.shift();
 
     // Print error message if the command isnt found
     if (input == null && command != "") {
-        let commandhighlight = appendClass("span", "output commandhighlight", `${args[0]}`);
+        let commandhighlight = appendClass("span", "output commandhighlight", `${cmd}`);
         terminal.append(appendClass("span", "output error", `Command `));
 
         let errors = document.querySelectorAll(".error");
@@ -106,7 +108,7 @@ const processCommand = () => {
     else {
         // Execute the command
         if (command != "")
-            input.arg();
+            input.arg(args);
     }
 
     terminal.append(prompt_(promptText));
