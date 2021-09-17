@@ -35,7 +35,7 @@ let custom = {
         const projectBox = appendClass("div", "output project-box");
 
         // Add your projects here. Delete the placeholders if you want.
-        // To add a project, call the createProject method inside projectBox.append(). Add the: project title, project description, and a picture or logo of your project. If you dont want a picture, no worries. You can randomly generate a picture. Just use "https://loremflickr.com/200/200" instead. It generates kittens!
+        // To add a project, call the createProject method inside projectBox.append(). Add the: project title, project description, a picture or logo of your project, and optionally a link to your project. If you dont want a picture, no worries. You can randomly generate a picture. Just use "https://loremflickr.com/200/200" instead. It generates kittens!
         terminal.append(appendClass("span", "section-title", "Projects:"));
 
         projectBox.append(createProject("Kittens!!!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus turpis sit amet diam aliquam ultrices. Mauris congue finibus justo.", "http://placekitten.com/200/200"));
@@ -44,6 +44,14 @@ let custom = {
         //
 
         terminal.append(projectBox);
+    },
+
+    exit: function exit() {
+        window.close();  
+    },
+
+    echo: function echo(args) {
+        terminal.append(...args);
     },
 
     // You can start here if you want. Rename the command and function name. Add functionality. Cool stuff.

@@ -24,5 +24,7 @@ let config = {
         {command: "about", description: "Describe yourself", arg: custom.about},
         {command: "contact", description: "A list of links to be contacted with", arg: custom.contact},
         {command: "projects", description: "A list of projects", arg: custom.projects},
+        {command: "exit", description: "Closes the tab", arg: custom.exit},
+        {command: "echo", description: "Echoes things and stuffs", arg: custom.echo},
     ]
 }
