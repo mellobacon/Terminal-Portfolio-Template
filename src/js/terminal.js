@@ -64,7 +64,7 @@ const erase = (n) => {
     const _prompt = prompts[prompts.length - 1];
 
     command = command.slice(0, -n);
-    _prompt.innerHTML = _prompt.innerHTML.slice(0, -n)
+    _prompt.innerHTML = _prompt.innerHTML.slice(0, -n);
 }
 
 // Cursor handling
