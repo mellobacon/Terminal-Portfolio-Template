@@ -78,6 +78,7 @@ body {
     padding: 0;
     overflow-y: auto;
     height: 90%;
+    word-break: break-all;
 }
 #terminal::-webkit-scrollbar {
     width: 8px;
@@ -135,7 +136,6 @@ body {
 }
 
 .error {
-    display: flex;
     color: var(--error-color);
 }
 .commandhighlight {
