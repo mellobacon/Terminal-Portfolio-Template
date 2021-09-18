@@ -95,8 +95,8 @@ const processCommand = () => {
 
     // Print error message if the command isnt found
     if (input == null && command != "") {
-        let commandhighlight = appendClass("span", "output commandhighlight", `${cmd}`);
-        terminal.append(appendClass("span", "output error", `Command `));
+        let commandhighlight = appendClass("span", "commandhighlight", `${cmd}`);
+        terminal.append(appendClass("span", "error", `Command `));
 
         let errors = document.querySelectorAll(".error");
         let error = errors[errors.length - 1];
